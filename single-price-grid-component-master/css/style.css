@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    max-width: 630px;
+    height: 470px;
+}
+.join{
+    height: 240px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+.join h3{
+    color: #2bb3b1;
+}
+.join h4{
+    color: #bfdf32;
+    margin: 20px 0;
+}
+.join p {
+    color: grey;
+}
+.price, .whyus{
+    height:230px !important;
+    width: 315px !important;
+}
+.price{
+    background-color: #2bb3b1;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 30px;
+    border-radius: 0 0 0 10px;
+}
+.price  p {
+    font-size: 14px;
+}
+.whyus{
+    background-color: #4abebd;
+    color: white;
+    padding: 30px;
+    border-radius: 0 0 10px 0;
+
+}
+.whyus p{
+    opacity: .6;
+    font-size: 14px;
+    line-height: 20px;
+}
+span{
+    font-size: 16px;
+    color: white;
+    opacity: .5;
+}
+button{
+    height: 45px;
+    width: 250px;
+    background-color: #bfdf32;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.205);  
+}
+button:hover{
+    background-color: #b2cf30;
+}
+@media (max-width: 630px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 315px !important;    
+
+    }
+    .price,.whyus{
+        height:230px !important;
+        width: 315px !important;
+        border-radius: 0;    
+    }
+    .join{
+        width: 315px !important;    
+        height: 300px;
+        border-radius: 10px 10px 0 0;
+    }
+    .whyus{
+        border-radius: 0 0 10px 10px;
+    }
+}
